@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM TP FINAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>SIM Trabajo Final</h1>
+        </header>
+
+        <div class="backgroundWaveColor"></div>
+        <div class="wave"></div>
+
+        <div id="enunciado">
+            <h1><u>Ejercicio 297:</u></h1>
+            <p class="text">
+                En una Tornería, ciertas piezas llegan al sector de Terminado provenientes de un torno automático 
+                cada dos minutos. En éste sector se procede al pulido que es realizado por dos operarios y la tarea 
+                demora un tiempo uniformemente distribuido entre 3 y 5 minutos. Luego las piezas son embaladas 
+                por otro operario que las va colocando en cajas adecuadas según una distribución exponencial 
+                negativa con una relación de 40 piezas por hora. Analizar la situación para 8 horas.
+            </p>
+            <p class="text">
+                Se desea conocer si es necesario disponer de otro operario para realizar también la tarea de 
+                embalaje.
+            </p>
+        </div>
+
+        <div class="containerBoton">
+            <button id="btnResolver" class="scroll-down btn">Resolver</button>
+        </div>
+    </section>
+
+    <section class="scrolledSection">
+        <div class="animacion">
+            <img src="./images/animacion.gif">
+        </div>
+
+        <div id="inputs">
+            <div class="input">
+                <p class="text">Cantidad de horas a simular</p>
+                <select id="selectorHoras" onchange="obtenerMinutos();">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="containerBoton">
+            <button id="btnSimular" class="btn">Simular</button>
+        </div>
+
+        <div class="tables">
+            <h1 id="titulo-tabla1">Tabla con 1 Embalador</h1>
+            <table id="tablaUnEmbalador" class="tabla"></table>
+            <br>
+
+            <h1 id="titulo-tabla2">Tabla con 2 Embaladores</h1>
+            <table id="tablaDosEmbaladores" class="tabla"></table>
+
+            <h1 id="titulo-tabla3">Tabla Resultados Finales</h1>
+            <table id="tablaResultados" class="tabla"></table>
+        </div>
+    </section>
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

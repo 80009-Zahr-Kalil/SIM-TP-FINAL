@@ -1,0 +1,1314 @@
+ffmpeg version N-102811-ga978b915ec-gde8e6e67e7+2 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.3.0 (Rev2, Built by MSYS2 project)
+  configuration:  --pkg-config=pkgconf --cc='ccache gcc' --cxx='ccache g++' --disable-autodetect --enable-amf --enable-bzlib --enable-cuda --enable-cuvid --enable-d3d11va --enable-dxva2 --enable-iconv --enable-lzma --enable-nvenc --enable-zlib --enable-sdl2 --enable-ffnvcodec --enable-nvdec --enable-cuda-llvm --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libdav1d --enable-libaom --disable-debug --enable-fontconfig --enable-libass --enable-libbluray --enable-libfreetype --enable-libmfx --enable-libmysofa --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-amrwbenc --enable-libwebp --enable-libxml2 --enable-libzimg --enable-libshine --enable-gpl --enable-avisynth --enable-libxvid --enable-libopenmpt --enable-version3 --enable-libsrt --enable-libgsm --enable-libvmaf --enable-libsvtav1 --enable-librtmp --enable-mbedtls --extra-cflags=-DLIBTWOLAME_STATIC --extra-libs=-lstdc++ --extra-cflags=-DLIBXML_STATIC --extra-libs=-liconv --disable-w32threads
+  libavutil      57.  0.100 / 57.  0.100
+  libavcodec     59.  3.100 / 59.  3.100
+  libavformat    59.  3.101 / 59.  3.101
+  libavdevice    59.  0.100 / 59.  0.100
+  libavfilter     8.  0.103 /  8.  0.103
+  libswscale      6.  0.100 /  6.  0.100
+  libswresample   4.  0.100 /  4.  0.100
+  libpostproc    56.  0.100 / 56.  0.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Kalil/AppData/Local/Temp/KritaFFmpegProgress.IJGRUt'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '50'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'D:/UTN-2021/SIM/Final/tpfinal/images/frame%04d.png'.
+Reading option '-i' ... matched as input url with argument 'D:/UTN-2021/SIM/Final/tpfinal/images/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument '[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'D:/UTN-2021/SIM/Final/tpfinal/images/animacion.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Kalil/AppData/Local/Temp/KritaFFmpegProgress.IJGRUt.
+[file @ 000001c45c91dc00] Setting default whitelist 'file,crypto,data'
+Applying option lavfi (create a complex filtergraph) with argument [0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url D:/UTN-2021/SIM/Final/tpfinal/images/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 50.
+Successfully parsed a group of options.
+Opening an input file: D:/UTN-2021/SIM/Final/tpfinal/images/frame%04d.png.
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0000.png' for reading
+[file @ 000001c45c961640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c969800] Statistics: 224432 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0001.png' for reading
+[file @ 000001c45c967c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c967d80] Statistics: 224432 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0002.png' for reading
+[file @ 000001c45d5b6f80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45d5b7100] Statistics: 224432 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0003.png' for reading
+[file @ 000001c45d5b7040] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45d5ee080] Statistics: 224432 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0004.png' for reading
+[file @ 000001c45d5b7040] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45d624f80] Statistics: 225807 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0005.png' for reading
+[file @ 000001c45d5b7040] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45d65c3c0] Statistics: 225807 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0006.png' for reading
+[file @ 000001c45d5b7040] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c967c80] Statistics: 225807 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0007.png' for reading
+[file @ 000001c45d5b7040] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c969680] Statistics: 225807 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0008.png' for reading
+[file @ 000001c45c969680] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c969740] Statistics: 227159 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0009.png' for reading
+[file @ 000001c45c969680] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c969740] Statistics: 227159 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0010.png' for reading
+[file @ 000001c45c969700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c969800] Statistics: 227159 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0011.png' for reading
+[file @ 000001c45c9697c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45d7b7880] Statistics: 227159 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0012.png' for reading
+[file @ 000001c45c9697c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45d7ef1c0] Statistics: 227656 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0013.png' for reading
+[file @ 000001c45c9697c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961700] Statistics: 227656 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0014.png' for reading
+[file @ 000001c45c961700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961800] Statistics: 227656 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0015.png' for reading
+[file @ 000001c45c961700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961800] Statistics: 227656 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0016.png' for reading
+[file @ 000001c45c9617c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961880] Statistics: 228363 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0017.png' for reading
+[file @ 000001c45c9627c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c9628c0] Statistics: 228363 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0018.png' for reading
+[file @ 000001c45c9627c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c9628c0] Statistics: 228363 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0019.png' for reading
+[file @ 000001c45c9627c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c9628c0] Statistics: 228363 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0020.png' for reading
+[file @ 000001c45c9627c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c9628c0] Statistics: 229416 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0021.png' for reading
+[file @ 000001c45c9627c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c9628c0] Statistics: 229416 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0022.png' for reading
+[file @ 000001c45c9627c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c9628c0] Statistics: 229416 bytes read, 0 seeks
+[image2 @ 000001c45c95e080] Probe buffer size limit of 5000000 bytes reached
+Input #0, image2, from 'D:/UTN-2021/SIM/Final/tpfinal/images/frame%04d.png':
+  Duration: 00:00:12.04, start: 0.000000, bitrate: N/A
+  Stream #0:0, 23, 1/25: Video: png, 1 reference frame, rgba(pc), 1920x1080 [SAR 2834:2834 DAR 16:9], 0/1, 25 fps, 25 tbr, 25 tbn
+Successfully opened the file.
+Parsing a group of options: input url D:/UTN-2021/SIM/Final/tpfinal/images/palette.png.
+Successfully parsed a group of options.
+Opening an input file: D:/UTN-2021/SIM/Final/tpfinal/images/palette.png.
+[NULL @ 000001c45c9611c0] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/palette.png' for reading
+[file @ 000001c45c9614c0] Setting default whitelist 'file,crypto,data'
+[png_pipe @ 000001c45c9611c0] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 000001c45c9611c0] Before avformat_find_stream_info() pos: 0 bytes read:1009 seeks:0 nb_streams:1
+[png_pipe @ 000001c45c9611c0] After avformat_find_stream_info() pos: 1009 bytes read:1009 seeks:0 frames:1
+Input #1, png_pipe, from 'D:/UTN-2021/SIM/Final/tpfinal/images/palette.png':
+  Duration: N/A, bitrate: N/A
+  Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn
+Successfully opened the file.
+Parsing a group of options: output url D:/UTN-2021/SIM/Final/tpfinal/images/animacion.gif.
+Successfully parsed a group of options.
+Opening an output file: D:/UTN-2021/SIM/Final/tpfinal/images/animacion.gif.
+[file @ 000001c45d77e740] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+detected 12 logical cores
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 2 times
+[image2 @ 000001c45c95e080] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 13 times
+[graph 0 input from stream 0:0 @ 000001c45da9d8c0] Setting 'video_size' to value '1920x1080'
+[graph 0 input from stream 0:0 @ 000001c45da9d8c0] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 000001c45da9d8c0] Setting 'time_base' to value '1/50'
+[graph 0 input from stream 0:0 @ 000001c45da9d8c0] Setting 'pixel_aspect' to value '2834/2834'
+[graph 0 input from stream 0:0 @ 000001c45da9d8c0] Setting 'frame_rate' to value '50/1'
+[graph 0 input from stream 0:0 @ 000001c45da9d8c0] w:1920 h:1080 pixfmt:rgba tb:1/50 fr:50/1 sar:2834/2834
+[graph 0 input from stream 1:0 @ 000001c45da9d9c0] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 000001c45da9d9c0] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 1:0 @ 000001c45da9d9c0] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 000001c45da9d9c0] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 000001c45da9d9c0] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 000001c45da9d9c0] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1
+[format @ 000001c45da9eec0] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 000001c45da9e9c0] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 000001c45da9e4c0] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
+[auto_scaler_1 @ 000001c45da9dbc0] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 000001c45da9e4c0] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
+[AVFilterGraph @ 000001c45c962100] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
+[swscaler @ 000001c45db5f040] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 000001c45da9e9c0] w:1920 h:1080 fmt:rgba sar:2834/2834 -> w:1920 h:1080 fmt:bgra sar:1/1 flags:0x2
+[swscaler @ 000001c463bb4d40] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 000001c45da9dbc0] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_0 @ 000001c45da9e4c0] [framesync @ 000001c463b300c8] Selected 1/50 time base
+[Parsed_paletteuse_0 @ 000001c45da9e4c0] [framesync @ 000001c463b300c8] Sync level 2
+Output #0, gif, to 'D:/UTN-2021/SIM/Final/tpfinal/images/animacion.gif':
+  Metadata:
+    encoder         : Lavf59.3.101
+  Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8(pc, progressive), 1920x1080 (0x0) [SAR 1:1 DAR 16:9], 0/1, q=2-31, 200 kb/s, 50 fps, 100 tbn (default)
+    Metadata:
+      encoder         : Lavc59.3.100 gif
+Clipping frame in rate conversion by 0.000008
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.01 bitrate=   0.0kbits/s speed=0.27x    [gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0023.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961640] Statistics: 229416 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0024.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961640] Statistics: 229353 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0025.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961640] Statistics: 229353 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 100x75 image at pos (228;463) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0026.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961640] Statistics: 229353 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0027.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961640] Statistics: 229353 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0028.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961640] Statistics: 228944 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0029.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c45c961640] Statistics: 228944 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 100x62 image at pos (228;463) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0030.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 228944 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0031.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 228944 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0032.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 228861 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0033.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 228861 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 119x67 image at pos (241;458) [area:1920x1080]
+frame=   13 fps=0.0 q=-0.0 size=      81kB time=00:00:00.25 bitrate=2645.6kbits/s speed=0.445x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0034.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 228861 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0035.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228861 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0036.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 228189 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0037.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 228189 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 128x95 image at pos (297;425) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0038.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 228189 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0039.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 228189 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0040.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 225819 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0041.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 225819 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 127x122 image at pos (353;374) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0042.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 225819 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0043.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 225819 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0044.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0045.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 119x139 image at pos (398;315) [area:1920x1080]
+frame=   25 fps= 24 q=-0.0 size=      87kB time=00:00:00.49 bitrate=1450.2kbits/s speed=0.461x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0046.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0047.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0048.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0049.png' for reading
+[file @ 000001c45db5b240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 117x133 image at pos (434;263) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0050.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0051.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0052.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0053.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 123x114 image at pos (467;231) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0054.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0055.png' for reading
+[file @ 000001c45db5b240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0056.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0057.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 103x85 image at pos (509;223) [area:1920x1080]
+frame=   37 fps= 24 q=-0.0 size=      93kB time=00:00:00.73 bitrate=1047.9kbits/s speed=0.466x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0058.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0059.png' for reading
+[file @ 000001c45db5b240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0060.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 227068 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0061.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 227068 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 79x70 image at pos (544;221) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0062.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 227068 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0063.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 227068 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0064.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 228598 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0065.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 228598 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 29x60 image at pos (594;221) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0066.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 228598 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0067.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 228598 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0068.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 229239 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0069.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 229239 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=   49 fps= 24 q=-0.0 size=      97kB time=00:00:00.97 bitrate= 820.7kbits/s speed=0.468x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0070.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 229239 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0071.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 229239 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0072.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 229210 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0073.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 229210 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0074.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 229210 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0075.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 229210 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0076.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 229283 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0077.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 229283 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0078.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 229283 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0079.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229283 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0080.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 229555 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0081.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 229555 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 39x65 image at pos (919;221) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0082.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 229555 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=   62 fps= 24 q=-0.0 size=      99kB time=00:00:01.23 bitrate= 658.4kbits/s speed=0.471x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0083.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 229555 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0084.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 229191 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0085.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229191 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 83x76 image at pos (919;221) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0086.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 229191 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0087.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 229191 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0088.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 229023 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0089.png' for reading
+[file @ 000001c45db5b240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 229023 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 114x101 image at pos (934;228) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0090.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 229023 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0091.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 229023 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0092.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 229134 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0093.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 229134 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 108x123 image at pos (968;247) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0094.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 229134 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=   74 fps= 24 q=-0.0 size=     105kB time=00:00:01.47 bitrate= 587.6kbits/s speed=0.47x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0095.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 229134 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0096.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 228919 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0097.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 228919 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 104x118 image at pos (994;291) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0098.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 228919 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0099.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 228919 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0100.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229353 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0101.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 229353 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 113x119 image at pos (1015;330) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0102.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 229353 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0103.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229353 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0104.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 230271 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0105.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 230271 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 118x108 image at pos (1040;363) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0106.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 230271 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=   86 fps= 24 q=-0.0 size=     112kB time=00:00:01.71 bitrate= 537.5kbits/s speed=0.471x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0107.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 230271 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0108.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 228872 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0109.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 228872 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 110x93 image at pos (1081;392) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0110.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 228872 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0111.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 228872 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0112.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229042 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0113.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 229042 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 125x95 image at pos (1115;410) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0114.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 229042 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0115.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 229042 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0116.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 229038 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0117.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229038 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 120x88 image at pos (1161;429) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0118.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 229038 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=   98 fps= 24 q=-0.0 size=     119kB time=00:00:01.95 bitrate= 499.7kbits/s speed=0.472x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0119.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 229038 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0120.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229313 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0121.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 229313 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1096x85 image at pos (228;444) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0122.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 229313 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0123.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 229313 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0124.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 233000 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0125.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 233000 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1096x81 image at pos (228;450) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0126.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 233000 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0127.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 233000 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0128.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 234180 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0129.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 234180 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1075x81 image at pos (249;450) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0130.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 234180 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  110 fps= 24 q=-0.0 size=     130kB time=00:00:02.19 bitrate= 485.9kbits/s speed=0.472x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0131.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 234180 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0132.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 233448 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0133.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 233448 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 116x91 image at pos (287;437) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0134.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 233448 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0135.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 233448 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0136.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 233051 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0137.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 233051 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 121x103 image at pos (324;411) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0138.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 233051 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0139.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 233051 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0140.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 229757 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0141.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 229757 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 116x111 image at pos (364;378) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0142.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 229757 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  122 fps= 24 q=-0.0 size=     136kB time=00:00:02.43 bitrate= 459.7kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0143.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 229757 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0144.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 230107 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0145.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 230107 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1233x195 image at pos (397;337) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0146.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 230107 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0147.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 230107 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0148.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 232570 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0149.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 232570 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1254x243 image at pos (423;290) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0150.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 232570 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0151.png' for reading
+[file @ 000001c45db5b240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 232570 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0152.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 231532 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0153.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 231532 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1280x285 image at pos (451;248) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0154.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 231532 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  134 fps= 24 q=-0.0 size=     151kB time=00:00:02.67 bitrate= 464.7kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0155.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 231532 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0156.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 229800 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0157.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229800 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1289x307 image at pos (484;224) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0158.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 229800 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0159.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 229800 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0160.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 229533 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0161.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 229533 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1289x311 image at pos (539;222) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0162.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229533 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0163.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 229533 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0164.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 230939 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0165.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 230939 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1643x311 image at pos (230;222) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0166.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 230939 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  146 fps= 24 q=-0.0 size=     166kB time=00:00:02.91 bitrate= 466.9kbits/s speed=0.472x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0167.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 230939 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0168.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 233886 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0169.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 233886 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1687x70 image at pos (230;462) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0170.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 233886 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0171.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 233886 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0172.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 234946 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0173.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 234946 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1673x77 image at pos (247;462) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0174.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 234946 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0175.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 234946 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0176.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 233751 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0177.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 233751 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1624x98 image at pos (296;464) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0178.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 233751 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  158 fps= 24 q=-0.0 size=     178kB time=00:00:03.15 bitrate= 462.1kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0179.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 233751 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0180.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 232089 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0181.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 232089 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 130x112 image at pos (350;480) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0182.png' for reading
+[file @ 000001c45db5b240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 232089 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0183.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 232089 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0184.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 231131 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0185.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 231131 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 555x415 image at pos (395;224) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0186.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 231131 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0187.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 231131 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0188.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 229122 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0189.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 229122 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 569x461 image at pos (425;224) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0190.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 229122 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  170 fps= 24 q=-0.0 size=     189kB time=00:00:03.39 bitrate= 456.7kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0191.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 229122 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0192.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 228741 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0193.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 228741 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 594x504 image at pos (443;227) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0194.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228741 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0195.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 228741 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0196.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 228301 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0197.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 228301 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 607x525 image at pos (462;244) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0198.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 228301 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0199.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 228301 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0200.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228256 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0201.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 228256 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 586x495 image at pos (509;280) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0202.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 228256 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  182 fps= 24 q=-0.0 size=     203kB time=00:00:03.63 bitrate= 458.3kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0203.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 228256 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0204.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 227758 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0205.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 227758 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 560x452 image at pos (572;323) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0206.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 227758 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0207.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 227758 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0208.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228573 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0209.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 228573 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 571x410 image at pos (598;365) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0210.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 228573 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0211.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228573 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0212.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 228827 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0213.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 228827 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 118x96 image at pos (1093;397) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0214.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 228827 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  194 fps= 24 q=-0.0 size=     212kB time=00:00:03.87 bitrate= 449.8kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0215.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 228827 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0216.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 229300 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0217.png' for reading
+[file @ 000001c45db5b240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 229300 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 115x87 image at pos (1141;421) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0218.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 229300 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0219.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 229300 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0220.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 229449 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0221.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 229449 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 108x73 image at pos (1192;442) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0222.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 229449 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0223.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 229449 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0224.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 231547 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0225.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 231547 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 402x338 image at pos (922;451) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0226.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 231547 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  206 fps= 24 q=-0.0 size=     219kB time=00:00:04.11 bitrate= 437.1kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0227.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 231547 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0228.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 233832 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0229.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 233832 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 402x332 image at pos (922;457) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0230.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 233832 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0231.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 233832 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0232.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 233435 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0233.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 233435 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 117x94 image at pos (936;687) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0234.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 233435 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0235.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 233435 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0236.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 233106 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0237.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 233106 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 117x114 image at pos (976;649) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0238.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 233106 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  218 fps= 24 q=-0.0 size=     227kB time=00:00:04.35 bitrate= 427.4kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0239.png' for reading
+[file @ 000001c45db5b240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 233106 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0240.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 232096 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0241.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 232096 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 109x127 image at pos (1010;602) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0242.png' for reading
+[file @ 000001c45db5b8c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 232096 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0243.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 232096 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0244.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 229965 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0245.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdd00] Statistics: 229965 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 582x222 image at pos (1039;459) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0246.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 229965 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0247.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 229965 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0248.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 228604 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0249.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 228604 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 613x183 image at pos (1058;459) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0250.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 228604 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  230 fps= 24 q=-0.0 size=     238kB time=00:00:04.59 bitrate= 424.6kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0251.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 228604 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0252.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 226425 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0253.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 226425 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 636x146 image at pos (1087;459) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0254.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 226425 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0255.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 226425 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0256.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0257.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 640x106 image at pos (1133;460) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0258.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0259.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0260.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0261.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 627x89 image at pos (1188;460) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0262.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  242 fps= 24 q=-0.0 size=     250kB time=00:00:04.83 bitrate= 424.8kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0263.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0264.png' for reading
+[file @ 000001c45db5b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 226548 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0265.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 226548 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 623x76 image at pos (1240;461) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0266.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 226548 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0267.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 226548 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0268.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228181 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0269.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228181 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 629x71 image at pos (1291;461) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0270.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 228181 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0271.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 228181 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0272.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd640] Statistics: 228236 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0273.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 228236 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 68x66 image at pos (1852;462) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0274.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 228236 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  254 fps= 24 q=-0.0 size=     256kB time=00:00:05.07 bitrate= 413.6kbits/s speed=0.473x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0275.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 228236 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0276.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 228548 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0277.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd280] Statistics: 228548 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 26x63 image at pos (1894;463) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0278.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 228548 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0279.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 228548 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0280.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd7c0] Statistics: 228168 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0281.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 228168 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0282.png' for reading
+[file @ 000001c45db5b700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228168 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0283.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 228168 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0284.png' for reading
+[file @ 000001c45db5bb80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 228232 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0285.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 228232 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 29x71 image at pos (1593;459) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0286.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd3c0] Statistics: 228232 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  266 fps= 24 q=-0.0 size=     256kB time=00:00:05.31 bitrate= 394.9kbits/s speed=0.474x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0287.png' for reading
+[file @ 000001c45db5b140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228232 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0288.png' for reading
+[file @ 000001c45db5bd80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 228470 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0289.png' for reading
+[file @ 000001c45db5b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 228470 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 79x73 image at pos (1593;457) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0290.png' for reading
+[file @ 000001c45db5bc80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228470 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0291.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 228470 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0292.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd500] Statistics: 226809 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0293.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 226809 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 112x72 image at pos (1610;457) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0294.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 226809 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0295.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 226809 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0296.png' for reading
+[file @ 000001c45db5be80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccda40] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0297.png' for reading
+[file @ 000001c45db5bac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdf80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 116x69 image at pos (1655;460) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0298.png' for reading
+[file @ 000001c45db5b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccde40] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  278 fps= 24 q=-0.0 size=     256kB time=00:00:05.55 bitrate= 377.9kbits/s speed=0.474x    [image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0299.png' for reading
+[file @ 000001c45db5b400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccd900] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[image2 @ 000001c45c95e080] Opening 'D:/UTN-2021/SIM/Final/tpfinal/images/frame0300.png' for reading
+[file @ 000001c45db5b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001c463ccdb80] Statistics: 224345 bytes read, 0 seeks
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+[gif @ 000001c45d77db00] 120x71 image at pos (1702;460) [area:1920x1080]
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+    Last message repeated 2 times
+[gif @ 000001c45d77db00] 110x71 image at pos (1757;460) [area:1920x1080]
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+    Last message repeated 2 times
+[gif @ 000001c45d77db00] 107x69 image at pos (1802;462) [area:1920x1080]
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+frame=  290 fps= 24 q=-0.0 size=     256kB time=00:00:05.79 bitrate= 362.2kbits/s speed=0.474x    [gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+    Last message repeated 1 times
+[gif @ 000001c45d77db00] 71x68 image at pos (1849;462) [area:1920x1080]
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+    Last message repeated 2 times
+[gif @ 000001c45d77db00] 28x68 image at pos (1892;462) [area:1920x1080]
+[gif @ 000001c45d77db00] 1x1 image at pos (1919;1079) [area:1920x1080]
+    Last message repeated 3 times
+[Parsed_paletteuse_0 @ 000001c45da9e4c0] [framesync @ 000001c463b300c8] Sync level 0
+[out_0_0 @ 000001c45da9e3c0] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=  301 fps= 24 q=-0.0 Lsize=     272kB time=00:00:06.01 bitrate= 371.2kbits/s speed=0.473x    
+[AVIOContext @ 000001c45c95ddc0] Statistics: 0 seeks, 26 writeouts
+video:272kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.007172%
+Input file #0 (D:/UTN-2021/SIM/Final/tpfinal/images/frame%04d.png):
+  Input stream #0:0 (video): 301 packets read (68959433 bytes); 301 frames decoded; 
+  Total: 301 packets (68959433 bytes) demuxed
+Input file #1 (D:/UTN-2021/SIM/Final/tpfinal/images/palette.png):
+  Input stream #1:0 (video): 1 packets read (1009 bytes); 1 frames decoded; 
+  Total: 1 packets (1009 bytes) demuxed
+Output file #0 (D:/UTN-2021/SIM/Final/tpfinal/images/animacion.gif):
+  Output stream #0:0 (video): 301 frames encoded; 301 packets muxed (278859 bytes); 
+  Total: 301 packets (278859 bytes) muxed
+302 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 000001c45d77e800] Statistics: 0 seeks, 2 writeouts
+[AVIOContext @ 000001c45d771d00] Statistics: 1009 bytes read, 0 seeks
