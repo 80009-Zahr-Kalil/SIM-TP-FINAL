@@ -6,6 +6,8 @@ const elemTablaUnEmbalador = document.getElementById('tablaUnEmbalador');
 const elemTablaDosEmbaladores = document.getElementById('tablaDosEmbaladores');
 const elemTablaResultadoFinales = document.getElementById('tablaResultados');
 
+
+
 function obtenerMinutos() {
     let minutos = document.getElementById("selectorHoras").value;
     return minutos * 60;
@@ -320,9 +322,10 @@ class Servidor {
 
 
 
-function simularUnEmbalador(minutos) {
+function simularUnEmbalador(minutos, minutoDesde, minutoHasta) {
     let randoms = crearRandoms(minutos);
     let tablaTotal = [];
+    let tablaParcial = [new Array(17).fill(0), new Array(17).fill(0)];
     let reloj = 0;
     let proximaLlegada = 0;
     let tiempoPulido1 = '-';
@@ -457,7 +460,14 @@ function simularUnEmbalador(minutos) {
         // console.log(proximaLlegada, finPulido1, finPulido2, finEmbalaje);
         console.log('-----------------------')
         let filaTabla = [reloj, tiempoEntreLlegadas, proximaLlegada, tiempoPulido1, finPulido1, tiempoPulido2, finPulido2, tiempoEmbalaje, finEmbalaje, pulidor1.estado, pulidor1.cola, pulidor2.estado, pulidor2.cola, embalador.estado, embalador.cola, piezasTerminadas, gananciaAcumulada];
-        tablaTotal.push(filaTabla);
+        tablaParcial.splice(0, 1);
+        tablaParcial.push(filaTabla);
+        console.log(tablaParcial);
+        
+        if(reloj >= minutoDesde && reloj <= minutoHasta || reloj == minutos) {
+            tablaTotal.push(filaTabla);
+        }
+
     }
     console.log(`PIEZAS TERMINADAS: ${piezasTerminadas} / GANANCIA: ${gananciaAcumulada}`);
     return tablaTotal;
@@ -465,9 +475,10 @@ function simularUnEmbalador(minutos) {
 
 
 
-function simularDosEmbaladores(minutos) {
+function simularDosEmbaladores(minutos, minutoDesde, minutoHasta) {
     let randoms = crearRandoms(minutos);
     let tablaTotal = [];
+    let tablaParcial = [new Array(17).fill(0), new Array(17).fill(0)];
     let reloj = 0;
     let proximaLlegada = 0;
     let tiempoPulido1 = '-';
@@ -665,7 +676,14 @@ function simularDosEmbaladores(minutos) {
         // console.log(proximaLlegada, finPulido1, finPulido2, finEmbalaje1, finEmbalaje2);
         console.log('-----------------------')
         let filaTabla = [reloj, tiempoEntreLlegadas, proximaLlegada, tiempoPulido1, finPulido1, tiempoPulido2, finPulido2, tiempoEmbalaje1, finEmbalaje1, tiempoEmbalaje2, finEmbalaje2, pulidor1.estado, pulidor1.cola, pulidor2.estado, pulidor2.cola, embalador1.estado, embalador1.cola, embalador2.estado, embalador2.cola, piezasTerminadas, gananciaAcumulada];
-        tablaTotal.push(filaTabla);
+        tablaParcial.splice(0, 1);
+        tablaParcial.push(filaTabla);
+        console.log(tablaParcial);
+        
+        if(reloj >= minutoDesde && reloj <= minutoHasta || reloj == minutos) {
+            tablaTotal.push(filaTabla);
+        }
+
     }
     
     console.log(`PIEZAS TERMINADAS: ${piezasTerminadas} / GANANCIA: ${gananciaAcumulada}`);
@@ -673,14 +691,23 @@ function simularDosEmbaladores(minutos) {
 }
 
 
+function obtenerDesdeHasta() {
+    let minutoDesde = Number(document.getElementById('mostrarDesde').value);
+    let minutoHasta = Number(document.getElementById('mostrarHasta').value);
+
+    return [minutoDesde, minutoHasta];
+}
+
 function main() {
     let minutos = obtenerMinutos();
+    let minutoDesde = obtenerDesdeHasta()[0];
+    let minutoHasta = obtenerDesdeHasta()[1];
 
-    let tablaUnEmbalador = simularUnEmbalador(minutos);
+    let tablaUnEmbalador = simularUnEmbalador(minutos, minutoDesde, minutoHasta);
     let cabecera1 = cabeceraTablaUnEmbalador();
     rellenarTabla(elemTablaUnEmbalador, cabecera1, tablaUnEmbalador);
 
-    let tablaDosEmbaladores = simularDosEmbaladores(minutos);
+    let tablaDosEmbaladores = simularDosEmbaladores(minutos, minutoDesde, minutoHasta);
     let cabecera2 = cabeceraTablaDosEmbaladores();
     rellenarTabla(elemTablaDosEmbaladores, cabecera2, tablaDosEmbaladores);
 
