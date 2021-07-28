@@ -199,12 +199,12 @@ function cabeceraTablaUnEmbalador() {
                         <th>Fin Pulido 2</th>
                         <th>Tiempo Embalaje</th>
                         <th>Fin Embalaje</th>
-                        <th>ESTADO P1</th>
-                        <th>COLA P1</th>
-                        <th>ESTADO P2</th>
-                        <th>COLA P2</th>
-                        <th>ESTADO EMB</th>
-                        <th>COLA EMB</th>
+                        <th>ESTADO PULIDOR 1</th>
+                        <th>COLA PULIDOR 1</th>
+                        <th>ESTADO PULIDOR 2</th>
+                        <th>COLA PULIDOR2</th>
+                        <th>ESTADO EMBALADOR</th>
+                        <th>COLA EMBALADOR</th>
                         <th>Piezas Terminadas</th>
                         <th>Ganancia TOTAL</th>
                     </tr>`;
@@ -226,14 +226,14 @@ function cabeceraTablaDosEmbaladores() {
                         <th>Fin Embalaje 1</th>
                         <th>Tiempo Embalaje 2</th>
                         <th>Fin Embalaje 2</th>
-                        <th>ESTADO P1</th>
-                        <th>COLA P1</th>
-                        <th>ESTADO P2</th>
-                        <th>COLA P2</th>
-                        <th>ESTADO EMB 1</th>
-                        <th>COLA EMB 1</th>
-                        <th>ESTADO EMB 2</th>
-                        <th>COLA EMB 2</th>
+                        <th>ESTADO PULIDOR 1</th>
+                        <th>COLA PULIDOR 1</th>
+                        <th>ESTADO PULIDOR 2</th>
+                        <th>COLA PULIDOR2</th>
+                        <th>ESTADO EMBALADOR 1</th>
+                        <th>COLA EMBALADOR 1</th>
+                        <th>ESTADO EMBALADOR 2</th>
+                        <th>COLA EMBALADOR 2</th>
                         <th>Piezas Terminadas</th>
                         <th>Ganancia TOTAL</th>
                     </tr>`
@@ -270,7 +270,30 @@ function rellenarTabla(elem, cabecera, tabla) {
     for(let i=0; i<tabla.length; i++) {
         let cadena = `<tr>`;
         for(let j=0; j<tabla[i].length; j++) {
-            cadena += `<td>${tabla[i][j]}</td>`;
+            if(i%2 == 0) {
+                cadena += `<td>${tabla[i][j]}</td>`;
+            } else {
+                cadena += `<td class='filaImpar'>${tabla[i][j]}</td>`;
+            }
+        }
+        cadena += `</tr>`;
+        elem.innerHTML += cadena;
+    }
+    return elem;
+}
+
+function rellenarTablaResultadosFinales(elem, cabecera, tabla) {
+    let arr = [tabla[tabla.length-2][4], tabla[tabla.length-1][4]];
+    let mayor = Math.max.apply(null, arr);
+    elem.innerHTML = cabecera;
+    for(let i=0; i<tabla.length; i++) {
+        let cadena = `<tr>`;
+        for(let j=0; j<tabla[i].length; j++) {
+            if(tabla[i][4] == mayor) {
+                cadena += `<td class='mejorOpcion'>${tabla[i][j]}</td>`;
+            } else {
+                cadena += `<td>${tabla[i][j]}</td>`;
+            }
         }
         cadena += `</tr>`;
         elem.innerHTML += cadena;
@@ -329,7 +352,7 @@ function simularUnEmbalador(minutos) {
     
     while(reloj < minutos) {
         reloj = actualizarReloj(arrayTiempos);
-        console.log(reloj.toString());
+        console.log(`RELOJ: ${reloj}`);
         
         
         if(reloj == 0) {
@@ -422,16 +445,16 @@ function simularUnEmbalador(minutos) {
         }
         
         mostrarPiezas(arrayPiezas);
-        console.log(pulidor1);
-        console.log(pulidor2);
-        console.log(embalador);
-        console.log(randoms);
+        // console.log(pulidor1);
+        // console.log(pulidor2);
+        // console.log(embalador);
+        // console.log(randoms);
         
         randoms = borrarRandoms(randoms);
         
         arrayTiempos = [proximaLlegada, finPulido1, finPulido2, finEmbalaje];
         
-        console.log(proximaLlegada, finPulido1, finPulido2, finEmbalaje);
+        // console.log(proximaLlegada, finPulido1, finPulido2, finEmbalaje);
         console.log('-----------------------')
         let filaTabla = [reloj, tiempoEntreLlegadas, proximaLlegada, tiempoPulido1, finPulido1, tiempoPulido2, finPulido2, tiempoEmbalaje, finEmbalaje, pulidor1.estado, pulidor1.cola, pulidor2.estado, pulidor2.cola, embalador.estado, embalador.cola, piezasTerminadas, gananciaAcumulada];
         tablaTotal.push(filaTabla);
@@ -479,7 +502,7 @@ function simularDosEmbaladores(minutos) {
     
     while(reloj < minutos) {
         reloj = actualizarReloj(arrayTiempos);
-        console.log(reloj.toString());
+        console.log(`RELOJ: ${reloj}`);
         
         
         if(reloj == 0) {
@@ -525,12 +548,27 @@ function simularDosEmbaladores(minutos) {
                 finPulido1 = '-';
             }
 
-            if(embaladorModificado == embalador1) {
+            // if(embaladorModificado == embalador1) {
+            //     arrayPiezas = piezaEsperandoEmbalaje(arrayPiezas, 'E1');
+            //     tiempoEmbalaje1 = calcularTiempoEmbalaje(randoms[2][0]);
+            //     finEmbalaje1 = Number((reloj + tiempoEmbalaje1).toFixed(2));
+            // } else {
+            //     cambiarDeEmbalador(arrayPiezas);
+            //     arrayPiezas = piezaEsperandoEmbalaje(arrayPiezas, 'E2');
+            //     tiempoEmbalaje2 = calcularTiempoEmbalaje(randoms[3][0]);
+            //     finEmbalaje2 = Number((reloj + tiempoEmbalaje2).toFixed(2));
+            // }
+
+            if(embaladorModificado != embalador1) {
+                cambiarDeEmbalador(arrayPiezas);
+            }
+            
+            if(finEmbalaje1 == '-' && hayPiezaEsperandoEmbalaje(arrayPiezas, 'E1')) {
                 arrayPiezas = piezaEsperandoEmbalaje(arrayPiezas, 'E1');
                 tiempoEmbalaje1 = calcularTiempoEmbalaje(randoms[2][0]);
                 finEmbalaje1 = Number((reloj + tiempoEmbalaje1).toFixed(2));
-            } else {
-                cambiarDeEmbalador(arrayPiezas);
+            }
+            if(finEmbalaje2 == '-' && hayPiezaEsperandoEmbalaje(arrayPiezas, 'E2')) {
                 arrayPiezas = piezaEsperandoEmbalaje(arrayPiezas, 'E2');
                 tiempoEmbalaje2 = calcularTiempoEmbalaje(randoms[3][0]);
                 finEmbalaje2 = Number((reloj + tiempoEmbalaje2).toFixed(2));
@@ -552,12 +590,27 @@ function simularDosEmbaladores(minutos) {
                 finPulido2 = '-';
             }
 
-            if(embaladorModificado == embalador1) {
+            // if(embaladorModificado == embalador1) {
+            //     arrayPiezas = piezaEsperandoEmbalaje(arrayPiezas, 'E1');
+            //     tiempoEmbalaje1 = calcularTiempoEmbalaje(randoms[2][0]);
+            //     finEmbalaje1 = Number((reloj + tiempoEmbalaje1).toFixed(2));
+            // } else {
+            //     cambiarDeEmbalador(arrayPiezas);
+            //     arrayPiezas = piezaEsperandoEmbalaje(arrayPiezas, 'E2');
+            //     tiempoEmbalaje2 = calcularTiempoEmbalaje(randoms[3][0]);
+            //     finEmbalaje2 = Number((reloj + tiempoEmbalaje2).toFixed(2));
+            // }
+
+            if(embaladorModificado != embalador1) {
+                cambiarDeEmbalador(arrayPiezas);
+            }
+            
+            if(finEmbalaje1 == '-' && hayPiezaEsperandoEmbalaje(arrayPiezas, 'E1')) {
                 arrayPiezas = piezaEsperandoEmbalaje(arrayPiezas, 'E1');
                 tiempoEmbalaje1 = calcularTiempoEmbalaje(randoms[2][0]);
                 finEmbalaje1 = Number((reloj + tiempoEmbalaje1).toFixed(2));
-            } else {
-                cambiarDeEmbalador(arrayPiezas);
+            }
+            if(finEmbalaje2 == '-' && hayPiezaEsperandoEmbalaje(arrayPiezas, 'E2')) {
                 arrayPiezas = piezaEsperandoEmbalaje(arrayPiezas, 'E2');
                 tiempoEmbalaje2 = calcularTiempoEmbalaje(randoms[3][0]);
                 finEmbalaje2 = Number((reloj + tiempoEmbalaje2).toFixed(2));
@@ -600,16 +653,16 @@ function simularDosEmbaladores(minutos) {
         }
         
         mostrarPiezas(arrayPiezas);
-        console.log(pulidor1);
-        console.log(pulidor2);
-        console.log(embalador1);
-        console.log(embalador2);
+        // console.log(pulidor1);
+        // console.log(pulidor2);
+        // console.log(embalador1);
+        // console.log(embalador2);
         
         randoms = borrarRandoms(randoms);
         
         arrayTiempos = [proximaLlegada, finPulido1, finPulido2, finEmbalaje1, finEmbalaje2];
         
-        console.log(proximaLlegada, finPulido1, finPulido2, finEmbalaje1, finEmbalaje2);
+        // console.log(proximaLlegada, finPulido1, finPulido2, finEmbalaje1, finEmbalaje2);
         console.log('-----------------------')
         let filaTabla = [reloj, tiempoEntreLlegadas, proximaLlegada, tiempoPulido1, finPulido1, tiempoPulido2, finPulido2, tiempoEmbalaje1, finEmbalaje1, tiempoEmbalaje2, finEmbalaje2, pulidor1.estado, pulidor1.cola, pulidor2.estado, pulidor2.cola, embalador1.estado, embalador1.cola, embalador2.estado, embalador2.cola, piezasTerminadas, gananciaAcumulada];
         tablaTotal.push(filaTabla);
@@ -634,7 +687,7 @@ function main() {
     let tablaResultadosFinales = extraerResultadosFinales(tablaUnEmbalador, tablaDosEmbaladores);
     let cabecera3 = cabeceraTablaResultadosFinales();
     console.log(tablaResultadosFinales);
-    rellenarTabla(elemTablaResultadoFinales, cabecera3, tablaResultadosFinales);
+    rellenarTablaResultadosFinales(elemTablaResultadoFinales, cabecera3, tablaResultadosFinales);
 
     document.getElementById('titulo-tabla1').style.display = 'block';
     document.getElementById('titulo-tabla2').style.display = 'block';

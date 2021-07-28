@@ -14,7 +14,7 @@ section {
 }
 
 section.scrolledSection{
-    background-color: #7e868f;
+    /* background-color: #7e868f; */
 }
  
 .scroll-down {
@@ -171,6 +171,14 @@ th {
     background: #2196f3;
     color: black;
     font-weight: bold;
+}
+
+.filaImpar {
+    background: #ccd1d1;
+}
+
+.mejorOpcion {
+    background: #7dcea0;
 }
 
 
